@@ -1,6 +1,6 @@
 const ImageHeroPage = () => {
   return (
-    <div className="relative w-[700px] h-[700px]">
+    <div className="relative w-[700px] h-[700px] mr-[-55px]">
       <svg
         viewBox="0 0 200 200"
         className="w-[700px] h-[700px] transform animate-float"
