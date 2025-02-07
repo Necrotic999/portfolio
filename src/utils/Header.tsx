@@ -3,11 +3,11 @@ import Link from "next/link";
 const Header = () => {
   const links = [
     {
-      href: "#",
+      href: "#hero",
       label: "Home",
     },
     {
-      href: "#",
+      href: "#about",
       label: "About",
     },
     {
