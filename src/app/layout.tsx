@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Lexend_Giga } from "next/font/google";
 import "./globals.css";
 import Header from "@/utils/Header";
-import Hero from "@/components/Hero";
+import Aurora from "../utils/Aurora";
 
 const lexendGiga = Lexend_Giga({
   variable: "--lexend-giga",
@@ -22,9 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lexendGiga.variable} antialiased py-[70px]`}>
+      <body className={`${lexendGiga.variable} antialiased py-[70px] relative`}>
+        <div className="w-full h-full absolute -z-10">
+          <Aurora
+            colorStops={["#ff0000", "#601515", "#FF3232"]}
+            speed={1}
+            amplitude={0.4}
+          />
+        </div>
         <Header />
-        <Hero />
         {children}
       </body>
     </html>
